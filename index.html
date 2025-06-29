@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mi Buscador</title>
+  <title>Modo Búsqueda ACTIVADO 🔍</title>
   <style>
     body {
       background-color: #1e1e1e;
@@ -17,8 +17,8 @@
 
     h1 {
       margin-bottom: 30px;
-      font-size: 2.8rem;
-      color: #ff6f61;
+      font-size: 2.5rem;
+      color: #00ffaa;
     }
 
     .gcse-search {
@@ -26,40 +26,52 @@
       max-width: 800px;
     }
 
+    /* Estilo de la caja */
     input.gsc-input {
       font-size: 18px !important;
       padding: 15px !important;
-      width: 100% !important;
       background-color: #2a2a2a !important;
       color: white !important;
       border: none !important;
       border-radius: 10px !important;
+      width: 100% !important;
     }
 
+    /* Botón de búsqueda */
     input.gsc-search-button {
       font-size: 16px !important;
-      background-color: #ff6f61 !important;
-      color: white !important;
+      background-color: #00ffaa !important;
+      color: #1e1e1e !important;
       border: none !important;
       border-radius: 10px !important;
-      padding: 15px 25px !important;
+      padding: 15px 20px !important;
       cursor: pointer;
     }
 
-    .gsc-control-cse {
-      background-color: transparent !important;
-      border: none !important;
+    /* Sugerencias visibles */
+    .gssb_c {
+      background-color: #2a2a2a !important;
+      color: white !important;
+      border-radius: 10px !important;
+      border: 1px solid #00ffaa !important;
+      font-size: 16px !important;
     }
 
+    .gssb_a {
+      padding: 10px !important;
+    }
+
+    /* Ocultar textos de branding */
     .gcsc-branding,
     .gcsc-branding-text,
-    .gsc-branding {
+    .gsc-branding,
+    .gsc-control-cse .gsc-control-wrapper-cse .gsc-branding {
       display: none !important;
     }
   </style>
 </head>
 <body>
-  <h1>🔍 Buscar con estilo</h1>
+  <h1>Modo Búsqueda ACTIVADO 🔍</h1>
   <script async src="https://cse.google.com/cse.js?cx=66830b9c22ef44392"></script>
   <div class="gcse-search"></div>
 </body>
